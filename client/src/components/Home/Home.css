@@ -1,0 +1,217 @@
+.contenedorHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contenedorSearch{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row;
+    /* background-color: aqua; */
+    height: 70px;
+    width: 1200px;
+    margin-top: -20px;
+}
+
+.buttonRefresh{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    /* left: 655px; */
+    top: 21px;
+    width: 100px;
+    height: 30px;
+    background: rgb(174, 191, 149 );
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.button:hover{
+    background: black;
+}
+
+.inputSearch{
+    display: flex;
+}
+
+.inputBar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 35px;
+    left: 555px;
+    transform: translate(-50%, -50%);
+    background: rgb(61, 61, 61);
+    height: 40px;
+    border-radius: 40px;
+    padding: 10px;
+    color: white;
+    font-size: 17px;
+
+}
+
+.btnSearch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 655px;
+    top: 21px;
+    width: 100px;
+    height: 30px;
+    background: rgb(174, 191, 149 );
+    color: white;
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.receta{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    background-attachment: fixed;
+}
+
+.contenedorSelect{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    height: 70px;
+    width: 1200px;
+    /* background: aquamarine; */
+}
+
+.contenedorSelect1{
+   display: flex;
+   position: absolute;
+   left: 180px;
+   height: 30px;
+}
+
+.select1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    width: 180px;
+    background: rgb(61, 61, 61);
+    color: white;
+    font-family: 'Roboto';
+    font-size: 18px
+}
+
+.contenedorSelect2{
+    display: flex;
+    position: absolute;
+    left: 500px;
+    height: 30px;
+ }
+ 
+ .select2{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 30px;
+     width: 180px;
+     background: rgb(61, 61, 61);
+     color: white;
+     font-family: 'Roboto';
+     font-size: 18px
+ }
+
+ .contenedorSelect3{
+    display: flex;
+    position: absolute;
+    left: 800px;
+    height: 30px;
+ }
+ 
+ .select3{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     height: 30px;
+     width: 180px;
+     background: rgb(61, 61, 61);
+     color: white;
+     font-family: 'Roboto';
+     font-size: 18px
+ }
+
+ .cardsHome{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 50px;
+ }
+
+ .letraCreate{
+    font-family: 'Roboto';
+ }
+
+ .card1{
+    margin: 10px;
+ }
+
+.button1{
+ display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(174, 191, 149 );
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    /* position: absolute;
+    left: 295px; */
+    height: 45px;
+    width: 48px; 
+
+}
+
+.paginado1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: 20px;
+}
+
+.button2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(174, 191, 149 );
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 50px;
+    height: 45px;
+    width: 48px;
+}

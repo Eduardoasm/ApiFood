@@ -1,0 +1,148 @@
+/* .containerRecipe{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+ 
+}
+
+.buttonDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    background: rgb(174, 191, 149 );
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    height: 50px;
+    width: 50px;   
+}
+
+.containerDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 800px;
+    width: 1000px;
+    margin-top: 20px;
+    background: aqua;
+}
+
+.cardDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.texto{
+    text-align: justify;
+} */
+
+/* From uiverse.io by @adamgiebl */
+.containerRecipe {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 1000px;
+    height: 950px;
+    margin-left: 150px;
+    border-radius: 30px;
+    background: #e0e0e0;
+    box-shadow: 15px 15px 30px #bebebe,
+                -15px -15px 30px #ffffff;
+   }
+
+.cardDetail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+    height: 400px;
+    width: 1000px
+}
+
+.texto{
+    text-align: justify;
+    margin: 30px;
+}
+
+.steps{
+    text-align: justify;
+    margin: 30px;
+}
+
+.imgDetail{
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    border-radius: 10px; 
+    height: 300px;
+    width: 400px;
+ 
+
+}
+   
+.score{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.health{
+    position: absolute;
+    left: 230px
+}
+
+.diets{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -40px;
+    margin-left: 300px
+}
+   
+.buttonDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 25px;
+    top: 25px;
+    background: rgb(174, 191, 149 );
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    height: 80px;
+    width: 80px;   
+}
+
+/* .nameDetail{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+
+} */
+
+.nameD{
+    width:900px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: initial;
+}

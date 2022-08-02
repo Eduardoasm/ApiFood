@@ -1,0 +1,26 @@
+.page{
+  list-style-type: none;
+}
+
+.paginado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+.btnListas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(174, 191, 149 );
+    font-family: 'Roboto';
+    font-size: 20px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    height: 35px;
+    width: 35px;
+}
