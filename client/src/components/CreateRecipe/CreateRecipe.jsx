@@ -8,7 +8,6 @@ import "./CreateRecipe.css";
 
 
 export function validate(input) {
-  // const allRecipes = useSelector((state)=> state.allRecipes)
   const regNum = new RegExp("^[0-9]+$");
   const regName = new RegExp("^[A-Z]+$");
   let errors = {};

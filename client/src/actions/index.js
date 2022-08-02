@@ -35,7 +35,6 @@ export function getRecipeName(name) {
 export function postRecipe(data) {
   return async function (dispatch) {
       const postRecipe = await axios.post("http://localhost:3001/recipes", data)
-      // console.log(postRecipe)
       return postRecipe
   };
 }
@@ -44,7 +43,6 @@ export function getRecipeId(id) {
   return async function (dispatch) {
     try {
       const recipeId = await axios.get(`http://localhost:3001/recipes/${id}`);
-      // console.log("entra", recipeId);
       return dispatch({
         type: "GET_RECIPE_ID",
         payload: recipeId.data,

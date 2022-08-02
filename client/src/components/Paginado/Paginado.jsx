@@ -3,23 +3,12 @@ import "./paginado.css"
 
 export default function Paginado({paginado, allRecipes, recipePerPage}){
 
-    // let page = [];
-
-    // const [ page, setPage ] = useState([])
     let page = []
 
-    // const buildPage = ()=>{
         for (let i = 1; i <= Math.ceil(allRecipes/recipePerPage); i++) {
             page.push(i)
         }
-        // setPage(arr)
-    // }
 
-    // console.log(page)
-
-    // useEffect(()=>{
-    //     buildPage()
-    // },[])
 
 
     return(

@@ -3,13 +3,12 @@ import { useDispatch, useSelector } from "react-redux";
 import { useEffect } from "react";
 import { getRecipeId } from "../../actions";
 import "./detail.css"
-// import { useHistory } from "react-router-dom";
 
 
 export default function Detail(props){
     const dispatch = useDispatch();
     const recipe = useSelector((state) => state.recipeId)
-    // let history = useHistory()
+
 
     const id = props.match.params.id
 

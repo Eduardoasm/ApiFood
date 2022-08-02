@@ -10,7 +10,6 @@
     justify-content: space-between;
     align-items: center;
     flex-direction: row;
-    /* background-color: aqua; */
     height: 70px;
     width: 1200px;
     margin-top: -20px;
@@ -185,8 +184,6 @@
     cursor: pointer;
     border-radius: 5px;
     margin: 5px;
-    /* position: absolute;
-    left: 295px; */
     height: 45px;
     width: 48px; 
 
