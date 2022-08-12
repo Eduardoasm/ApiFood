@@ -2,7 +2,9 @@ const initialState = {
   recipes: [],
   allRecipes: [],
   recipeId: {},
-  diets: []
+  diets: [],
+  recipeDetail: {},
+  nameRecipes: []
 };
 
 export const GET_ALL_RECIPES = "GET_ALL_RECIPES";
@@ -13,6 +15,8 @@ export const POST_RECIPE = "POST_RECIPE"
 export const GET_RECIPE_NAME = "GET_RECIPE_NAME"
 export const GET_RECIPE_ID = "GET_RECIPE_ID"
 export const GET_ALL_DIETS = "GET_ALL_DIETS"
+export const DELETE_RECIPE = "DELETE_RECIPE"
+export const RECIPE_DETAIL = "RECIPE_DETAIL"
 
 function rootReducer(state = initialState, action) {
   switch (action.type) {
@@ -21,6 +25,7 @@ function rootReducer(state = initialState, action) {
         ...state,
         recipes: action.payload,
         allRecipes: action.payload,
+        nameRecipes: action.payload
 
       };     
        default:
@@ -28,7 +33,7 @@ function rootReducer(state = initialState, action) {
 
 
     case GET_ORDERED_RECIPES:
-        const allRecipes = state.recipes
+        const allRecipes = state.allRecipes
         const recipeOrder = action.payload === "ascendent" ?
         allRecipes.sort((a, b)=>{
           if(a.name > b.name ){
@@ -54,7 +59,7 @@ function rootReducer(state = initialState, action) {
         }
 
     case GET_HEALTHSCORE:
-      const allRecipe = state.recipes;
+      const allRecipe = state.allRecipes;
       const recipeHealthScore = action.payload === "healthScoreHight" ? 
       allRecipe.sort((a, b)=>{
         if(a.healthScore < b.healthScore){
@@ -105,10 +110,24 @@ function rootReducer(state = initialState, action) {
           recipeId: action.payload
         }
 
-        case GET_ALL_DIETS:
+      case GET_ALL_DIETS:
+        return{
+          ...state,
+          diets: action.payload
+          }
+      
+      case DELETE_RECIPE:
+        let recipesId = state.allRecipes
+        let deleteRecipe = recipesId.filter(e => e !== action.payload)
+        return{
+          ...state,
+          allRecipes: deleteRecipe
+        }   
+
+        case RECIPE_DETAIL:
           return{
             ...state,
-            diets: action.payload
+            recipeId: action.payload
           }
   }
 }

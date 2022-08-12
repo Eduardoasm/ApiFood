@@ -6,12 +6,13 @@
     align-items: center;
     flex-direction: column;
     width: 1000px;
-    height: 950px;
+    min-height: 800px;
     margin-left: 150px;
     border-radius: 30px;
     background: #e0e0e0;
     box-shadow: 15px 15px 30px #bebebe,
                 -15px -15px 30px #ffffff;
+    /* background: red; */
    }
 
 .cardDetail{
@@ -40,7 +41,7 @@
     border-radius: 10px; 
     height: 300px;
     width: 400px;
- 
+    flex-direction: column;
 
 }
    
@@ -52,13 +53,17 @@
 }
 
 .health{
-    position: absolute;
-    left: 230px
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-left: 80px;
 }
 
 .diets{
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
     margin-top: -40px;
     margin-left: 300px
@@ -79,14 +84,179 @@
     cursor: pointer;
     border-radius: 5px;
     margin: 5px;
-    height: 80px;
+    height: 60px;
     width: 80px;   
 }
 
 .nameD{
     width:900px;
-    height: 200px;
+    height: 60px;
+    /* margin-top: -300px; */
     display: flex;
     justify-content: center;
-    align-items: initial;
+    align-items: flex-start;
+    /* background: blue; */
+    flex-wrap: wrap;
+}
+
+.btnDelete{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* position: absolute;
+    left: 25px;
+    top: 25px; */
+    background: #FF0000;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 500;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: 5px;
+    height: 40px;
+    width: 110px;   
+}
+
+.diets1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center; 
+    margin: 10px;
+    height: 50px;
+    width: 120px;
+    background: rgb(174, 191, 149 );
+
+}
+
+
+@media screen and (max-width: 1150px){
+    .containerRecipe{
+        width: 800px;
+        /* background: red; */
+    }
+
+
+    .imgDetail{
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 100px;
+        width: 400px;
+        /* height: 400px; */
+        /* background: red; */
+      
+    }
+
+    .texto{
+        margin-right: 120px;
+        text-align: justify;
+        width: 600px;
+    }
+
+    .diets1{
+        width: 100px;
+    }
+
+    .nameD{
+        margin-left: 40px
+    }
+}
+
+ @media screen and (max-width: 950px){
+
+    .containerRecipe{
+        width: 400px;
+    }
+
+    .nameD{
+        font-size: 7px;
+    }
+
+    .cardDetail{
+        flex-direction: column;
+    }
+
+    .imgDetail{
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 100px;
+    width: 400px;
+    }
+
+    .texto{
+        margin-top: -5px;
+        margin-right: 40px;
+        text-align: justify;
+        width: 340px;
+    }
+
+    .diets{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: red; */
+        width: 400px;
+        margin-top: 250px;
+        margin-right: 300px;
+        flex-wrap: wrap;
+    }
+    
+    .steps{
+        margin-top: 10px;
+    }
+
+} 
+
+
+@media screen and (max-width: 560px){
+    .buttonDetail{
+        margin-top: -10px;
+        margin-left: 150px;
+        height: 30px;
+        width: 50px
+    }
+
+    .containerRecipe{
+        margin-top: 50px;
+        margin-left: 50px;
+        width: 300px;
+    }
+
+    .nameD{
+        font-size: 6px;
+        margin-left: 50px
+    }
+
+    .imgDetail{
+        margin-top: -20px;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 100px;
+        width: 400px;
+        }
+
+    .health{
+        font-size: 17px;
+    }
+
+    .texto{
+        margin-top: -5px;
+        margin-right: 40px;
+        text-align: justify;
+        width: 250px;
+    }
+
+    .diets{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        /* background: red; */
+        width: 250px;
+        margin-top: 400px;
+        margin-right: 300px;
+        flex-wrap: wrap;
+        /* background: red; */
+    }
+
 }

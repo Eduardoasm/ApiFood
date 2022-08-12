@@ -83,3 +83,75 @@ body{
     top: 0
 }
 
+@media screen and (max-width: 1220px){
+    .image{
+        width: 650px;
+        margin-left: 150px;
+        border: solid;
+        margin-top: 85px;
+        border-radius: 10px;
+    }
+
+}
+
+@media screen and (max-width: 1070px){
+    .image{
+        width: 400px;
+        margin-left: 100px;
+        border: solid;
+        margin-top: 85px;
+        border-radius: 10px;
+    }
+
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: serif;
+        font-size: 35px;
+        margin-left: 50px;
+        margin-top: 80px;
+    }
+
+    .button{
+        margin-left: 30px
+    }
+}
+
+@media screen and (max-width: 750px){
+
+    .image{
+        width: 300px;
+        border: solid;
+        margin-left: 10px;
+        margin-top: 20px;
+        border-radius: 10px;
+        background: red;
+    }
+
+    .landingPage{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 100px;
+    }
+
+    .titulo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-family: serif;
+        font-size: 35px;
+        margin-left: 0px;
+        margin-top: -100px;
+    }
+
+    .button{
+        margin-left: 0px;
+        margin-top: 20px
+    }
+
+}

@@ -48,16 +48,45 @@ function createRecipeBd(data) {
   };
 }
 
+function alert(){
+  return alert("recipe not found")
+}
+
+router.delete("/:id", async (req, res, next) =>{
+  const { id } = req.params
+
+    try {
+      let removeId = await Recipes.destroy({
+        where: {
+          id
+        }
+      })
+   return res.status(500).res.send(removeId)
+    } catch (error) {
+      next(error)
+    }
+
+})
+
+
+
 router.get("/", async (req, res, next) => {
   const { name } = req.query;
       let recipes = await getAllRecipes()
       if(name){
-          let recipeName = recipes.filter(e => e.name.toLowerCase().includes(name.toLocaleLowerCase()))
+        try {
+          // if(name.length === 0){
+          //   res.send("error")
+          // }
+          let recipeName = recipes.filter(e => e.name.toLowerCase().includes(name.toLowerCase()))
           recipeName.length?
           res.status(200).send(recipeName):
-          res.status(400).send("No se encontro la receta solicitada")
+          res.status(400).send("no se encontro la receta")
+        } catch (error) {
+          next(error)
+        }
       }else{
-        res.status(200).send(recipes)
+         res.send(recipes) 
       }
     })
 
@@ -105,6 +134,8 @@ router.post("/", async (req, res, next) => {
     } catch (error) {
       next(error)
     }
+
+
 
 
 });

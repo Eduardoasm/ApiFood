@@ -6,7 +6,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 .btnListas{
@@ -24,3 +24,28 @@
     height: 35px;
     width: 35px;
 }
+
+.btnListas:hover{
+  background-color: rgb(61, 61, 61);
+  color: #fff;
+}
+
+.btnListas1{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* background: rgb(174, 191, 149 ); */
+  background: rgb(61, 61, 61);
+  color: #fff; 
+  font-family: 'Roboto';
+  font-size: 20px;
+  font-weight: 500;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 5px;
+  height: 35px;
+  width: 35px;
+}
+
+

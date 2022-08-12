@@ -7,7 +7,7 @@ export default function LandingPage() {
   return (
     <div className="landingPage">
       <div className="box">
-        <h1 className="titulo">Welcome to ApiFood</h1>
+        <h1 className="titulo">Welcome to Recipe Book</h1>
         <Link to="/home" style={{ textDecoration: 'none' }}>
           <button className="button"><span>Enter here</span></button>
         </Link>

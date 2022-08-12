@@ -76,7 +76,6 @@ export default function CreateRecipe() {
     history.push("/home");
   };
 
-  console.log(allDiets.id)
 
   const handleDietsChange = (e) => {
     if (e.target.checked) {

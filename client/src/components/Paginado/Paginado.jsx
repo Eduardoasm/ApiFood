@@ -1,7 +1,7 @@
 import React from "react";
 import "./paginado.css"
 
-export default function Paginado({paginado, allRecipes, recipePerPage}){
+export default function Paginado({paginado, allRecipes, recipePerPage, currentPage}){
 
     let page = []
 
@@ -18,7 +18,7 @@ export default function Paginado({paginado, allRecipes, recipePerPage}){
                 {page &&
                 page.map(e=> (
                     <li className="page" key={e}>
-                        <button className="btnListas" onClick={()=> paginado(e)}>{e}</button>
+                        <button className={e === currentPage ? "btnListas1": "btnListas"} onClick={()=> paginado(e)}>{e}</button>
                     </li>
                 ))}
             </ul>

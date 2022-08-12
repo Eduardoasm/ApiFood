@@ -3,35 +3,33 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    width: 100%;
 }
 
 .contenedorSearch{
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row;
-    height: 70px;
-    width: 1200px;
+    align-items: flex-start;
+    height: 60px;
     margin-top: -20px;
+    width: 98%;
 }
 
 .buttonRefresh{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    /* left: 655px; */
-    top: 21px;
     width: 100px;
     height: 30px;
     background: rgb(174, 191, 149 );
-    color: white;
+    color: #100f09;
     font-family: 'Roboto';
     font-size: 20px;
     font-weight: 500;
     border: none;
     cursor: pointer;
     border-radius: 5px;
+    margin-top: 15px;
+    margin-left: 20px
 }
 
 .button:hover{
@@ -40,36 +38,37 @@
 
 .inputSearch{
     display: flex;
+    align-items: center;
+    justify-content: center;
+    /* background: blue; */
+    height: 60px;
+    width: 900px;
 }
 
 .inputBar{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    top: 35px;
-    left: 555px;
-    transform: translate(-50%, -50%);
-    background: rgb(61, 61, 61);
-    height: 40px;
-    border-radius: 40px;
+    justify-content: flex-end;
+    align-items: flex-end;
+    background: #fff;
+    height: 20px;
+    border-radius: 5px;
     padding: 10px;
-    color: white;
     font-size: 17px;
+    border: none;
+}
 
+.inputBar::placeholder{
+    color: rgba(122, 119, 119, 0.589);
 }
 
 .btnSearch{
     display: flex;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    left: 655px;
-    top: 21px;
     width: 100px;
     height: 30px;
     background: rgb(174, 191, 149 );
-    color: white;
+    color: black;
     font-family: 'Roboto';
     font-size: 20px;
     font-weight: 500;
@@ -79,11 +78,11 @@
 }
 
 .receta{
-    width: 150px;
-    height: 150px;
+    width: 100px;
+    height: 100px;
     position: absolute;
-    top: 50px;
-    right: 50px;
+    top: 30px;
+    right: 40px;
     cursor: pointer;
     border-radius: 5px;
     background-attachment: fixed;
@@ -92,19 +91,11 @@
 .contenedorSelect{
     display: flex;
     justify-content: space-between;
-    align-items: center;
-    margin-top: 20px;
-    height: 70px;
-    width: 1200px;
-    /* background: aquamarine; */
+    align-items: flex-end;
+    height: 60px;
+    width: 900px;
 }
 
-.contenedorSelect1{
-   display: flex;
-   position: absolute;
-   left: 180px;
-   height: 30px;
-}
 
 .select1{
     display: flex;
@@ -113,18 +104,12 @@
     height: 30px;
     width: 180px;
     background: rgb(61, 61, 61);
-    color: white;
+    color: #f3f3f3;
     font-family: 'Roboto';
-    font-size: 18px
+    font-size: 18px;
+    border-radius: 5px;
 }
 
-.contenedorSelect2{
-    display: flex;
-    position: absolute;
-    left: 500px;
-    height: 30px;
- }
- 
  .select2{
      display: flex;
      justify-content: center;
@@ -132,16 +117,10 @@
      height: 30px;
      width: 180px;
      background: rgb(61, 61, 61);
-     color: white;
+     color: #f3f3f3;
      font-family: 'Roboto';
-     font-size: 18px
- }
-
- .contenedorSelect3{
-    display: flex;
-    position: absolute;
-    left: 800px;
-    height: 30px;
+     font-size: 18px;
+     border-radius: 5px;
  }
  
  .select3{
@@ -151,9 +130,10 @@
      height: 30px;
      width: 180px;
      background: rgb(61, 61, 61);
-     color: white;
+     color: #f3f3f3;
      font-family: 'Roboto';
-     font-size: 18px
+     font-size: 18px;
+     border-radius: 5px;
  }
 
  .cardsHome{
@@ -165,7 +145,11 @@
  }
 
  .letraCreate{
+    position: absolute;
+    right: 20px;
+    top: -15px;
     font-family: 'Roboto';
+    color: #122027
  }
 
  .card1{
@@ -183,10 +167,10 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    margin: 5px;
+    margin-left: 30px;
     height: 45px;
     width: 48px; 
-
+  
 }
 
 .paginado1{
@@ -194,7 +178,6 @@
     justify-content: center;
     align-items: center;
     flex-direction: row;
-    margin: 20px;
 }
 
 .button2{
@@ -208,7 +191,264 @@
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    margin: 50px;
+    margin: 40px;
     height: 45px;
     width: 48px;
+   
+}
+
+.logoApi{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    height: 60px;
+    width: 60px;
+    border-radius: 5px;
+}
+
+.contenedorNav{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 140px;
+    width: 100%;
+    margin-top: -20px;
+    background: #D5DBDB;
+    
+}
+
+.containerSlider{
+    width: 100%;
+    margin: auto;
+    margin-top: 3px;
+    overflow: hidden;
+}
+
+.containerSlider ul{
+    display:flex;
+    width: 400%;
+    padding: 0;
+    animation: cambio 20s infinite alternate;
+}
+
+.containerSlider li{
+    width: 100%;
+    list-style: none;
+
+}
+
+.containerSlider img{
+    width: 85%;
+}
+
+.containerInfo{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: #D5DBDB;
+    width: 100%;
+    height: 90px;
+    margin-bottom: -25px;
+}
+
+.linkedIn{
+    height: 20px;
+    margin:5px;
+    margin-top: 33px;
+}
+
+.gitHub{
+    height:20px;
+    margin: 5px;
+    margin-top: 33px;
+}
+
+.copyR{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.info{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin: -30px;
+}
+
+@keyframes cambio {
+    0% { margin-left: 0; }
+    20% { margin-left: 0; }
+
+    25% { margin-left: -100%; }
+    45% { margin-left: -100%; }
+
+    50% {margin-left: -200% }
+    70% { margin-left: -200% }
+
+    75% {margin-left: -300% }
+    100% { margin-left: -300% }
+}
+
+@media screen and (max-width: 1200px){
+
+    .inputSearch{
+        width: 750px;
+    }
+
+    .contenedorSelect{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-left: -50px;
+        height: 70px;
+    }
+
+    .select1{
+        width: 200px;
+        margin-top:10px;
+        margin: 10px
+ 
+    }
+
+    .select2{
+        width: 200px;
+        margin-top:10px;
+        margin: 10px
+    }
+
+    .select3{
+        width: 200px;
+        margin-top:10px;
+        margin: 10px
+    }
+}
+
+@media screen and (max-width: 1000px){
+
+    .inputSearch{
+        width: 600px;
+    }
+
+    .contenedorSelect{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-left: -50px;
+    }
+
+    .select1{
+        width: 150px;
+        margin: 10px
+    }
+
+    .select2{
+        width: 150px;
+        margin: 10px
+    }
+
+    .select3{
+        width: 150px;
+        margin: 10px
+    }
+}
+
+@media screen and (max-width: 815px){
+
+    .inputSearch{
+        width: 400px;
+
+    }
+}
+
+@media screen and (max-width: 722px){
+
+    
+    .containerSlider{
+        display: none;
+    }
+
+    
+    .contenedorSearch{
+        text-align: center;
+        width: 100%;
+
+    }
+
+    .buttonRefresh{
+        margin-left: 0px;
+    }
+
+    .inputSearch{
+        margin-left: -150px ;
+    }
+
+    .contenedorSelect{
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+        margin-left: -50px;
+
+    }
+
+    .select1{
+        width: 100px;
+        margin: 10px
+    }
+
+    .select2{
+        width: 100px;
+        margin: 10px
+    }
+
+    .select3{
+        width: 100px;
+        margin: 10px
+    }
+
+}
+
+@media screen and (max-width: 570px){
+    .receta{
+        margin-top: -15px;
+        width: 60px;
+        height: 60px;
+    }
+    
+    .letraCreate{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width: 485px){
+
+    .buttonRefresh{
+        display: none
+    }
+
+    .inputBar{
+        height: 5px;
+        width: 80px;
+        margin-left: 90px;
+    }
+
+    .inputBar::placeholder{
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+        font-size: 10px
+    }
+
+    .btnSearch{
+        height: 20px;
+        width: 80px;
+        font-size: 15px
+    }
+
+
 }

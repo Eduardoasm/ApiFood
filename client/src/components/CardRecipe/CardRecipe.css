@@ -1,4 +1,73 @@
 .card {
+  width: 330px;
+  height: 430px;
+  background: #D5DBDB;
+  border-radius: 5px;
+  text-align: center;
+  color: #f0f0f0;
+  font-family: inherit;
+  z-index: 1;
+  margin: 20px;
+
+ }
+ 
+ .cardImage {
+  display: flex;
+  margin: 60px auto 10px auto;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #f0f0f0;
+  border-radius: 50%;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+  z-index: 99;
+  background-color: #152f50;
+  margin-top: 10px
+ }
+ 
+ .cardDiets {
+  opacity: 0;
+  transition: all 0.5s;
+ }
+ 
+ .cardName {
+  padding: 10px;
+  font-weight: 500;
+  font-size: 18px;
+ }
+ 
+ .cardHealthScore {
+  padding: 0 5px;
+  cursor: pointer;
+ }
+ 
+ .card:hover .cardImage {
+  transform: scale(1.1);
+  border: 1px solid #f0f0f0;
+ }
+ 
+ .card:hover .cardName,
+ .card:hover .cardDiets {
+  opacity: 1;
+ }
+
+ .cardHealthScore1{
+  color: green;
+ }
+
+ .cardHealthScore2{
+    color: yellow
+ }
+
+ .cardHealthScore3{
+  color: red
+}
+ 
+
+
+/* .card {
     width: 330px;
     height: 430px;
     background: lightgrey;
@@ -33,4 +102,4 @@
     justify-content: center;
     align-items: center;
     font-family: 'Roboto';
-}
+} */

@@ -27,7 +27,7 @@ module.exports = (sequelize) => {
     image: {
       type: DataTypes.STRING,
       defaultValue: 'https://www.sinrumbofijo.com/wp-content/uploads/2016/05/default-placeholder.png',
-    }
+    },
     },
     {
       timestamps: false

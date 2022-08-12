@@ -10,7 +10,6 @@ export default function CardRecipe({name, diets, image, healthScore, id}){
         }
     })
 
-    console.log(dietas)
 
     return(
         <div className="card">
@@ -18,7 +17,7 @@ export default function CardRecipe({name, diets, image, healthScore, id}){
             <h3 className="cardName">{name}</h3>
             <img className="cardImage" src={image} alt={name}/>
             <h4 className="cardDiets">Diets: {dietas}</h4>
-            <h4 className="cardHealthScore">HealthScore: {healthScore}</h4>
+            <h4 className="cardHealthScore">Health Score: {healthScore}</h4>
             </Link>
         </div>
     )

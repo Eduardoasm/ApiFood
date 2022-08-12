@@ -14,6 +14,14 @@ import Loading from "../Loading/Loading";
 import Paginado from "../Paginado/Paginado";
 import "./Home.css";
 import receta from "../../images/crearReceta.jpg";
+import slider3 from "../../images/platos rest2.gif"
+import slider4 from "../../images/platos rest3.jpg"
+import slider6 from "../../images/platos rest5.jpg"
+import slider7 from "../../images/sushiImg.jpg"
+import Footer from "../Footer/Footer"
+
+
+
 
 export default function Home() {
   const dispatch = useDispatch();
@@ -55,6 +63,7 @@ export default function Home() {
   function handleSubmit(e) {
     e.preventDefault();
     dispatch(getAllRecipes());
+    
   }
 
   const handleOrder = (e) => {
@@ -88,11 +97,16 @@ export default function Home() {
     });
   };
 
+
+
+
   return currentRecipes.length < 1 ? (
  <Loading />
 ) : (
     <div className="contenedorHome">
+      <div className="contenedorNav">
       <div className="contenedorSearch">
+        <img className="logoApi" src={receta} alt="img"/>
         <button className="buttonRefresh" onClick={handleSubmit}>
           Refresh
         </button>
@@ -117,7 +131,7 @@ export default function Home() {
           to="/createRecipe"
           style={{ textDecoration: "none", color: "black" }}
         >
-          <h2 className="letraCreate">Create Recipe here</h2>
+          <h3 className="letraCreate">Create Recipe here</h3>
           <img src={receta} alt="Create recipe" className="receta" />
         </Link>
       </div>
@@ -130,8 +144,8 @@ export default function Home() {
         </div>
         <div className="contenedorSelect2">
           <select className="select2" onChange={(e) => handleHealthScore(e)}>
-            <option value="healthScoreHight">Hight-Low</option>
-            <option value="healthScoreLow">Low-Hight</option>
+            <option value="healthScoreHight">High-Low</option>
+            <option value="healthScoreLow">Low-High</option>
           </select>
         </div>
         <div className="contenedorSelect3">
@@ -149,7 +163,16 @@ export default function Home() {
           </select>
         </div>
       </div>
-
+      </div>
+      <div className="containerSlider">
+          <ul>
+            <li> <img src={slider7} alt="comida" height="450px" width="600px" /> </li>
+            <li> <img src={slider6} alt="comida" height="450px" width="600px" /> </li>
+            <li> <img src={slider3} alt="comida" height="450px" width="600px" /> </li>
+            <li> <img src={slider4} alt="comida" height="450px" width="600px" /> </li>
+            </ul>
+      </div>
+      
       <div className="cardsHome">
         {currentRecipes?.map((e) => {
           return (
@@ -164,6 +187,7 @@ export default function Home() {
             />
           );
         })}
+ 
       </div>
 
       <div className="paginado1">
@@ -174,12 +198,13 @@ export default function Home() {
           allRecipes={allRecipes.length}
           recipePerPage={recipePerPage}
           paginado={paginado}
+          currentPage={currentPage}
         />
         <button className="button2" onClick={nextPage}>
           Next
         </button>
       </div>
-
+        <Footer/>
     </div>
   );
 }
