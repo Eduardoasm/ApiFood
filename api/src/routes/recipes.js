@@ -8,13 +8,10 @@ const {
   getAllRecipes,
   getRecipeByPk,
 } = require("../controllers/functions");
-// Importar todos los routers;
-// Ejemplo: const authRouter = require('./auth.js');
+
 
 const router = Router();
 
-// Configurar los routers
-// Ejemplo: router.use('/auth', authRouter);
 
 function createRecipe(data) {
   return {
@@ -48,10 +45,6 @@ function createRecipeBd(data) {
   };
 }
 
-function alert(){
-  return alert("recipe not found")
-}
-
 router.delete("/:id", async (req, res, next) =>{
   const { id } = req.params
 
@@ -75,9 +68,6 @@ router.get("/", async (req, res, next) => {
       let recipes = await getAllRecipes()
       if(name){
         try {
-          // if(name.length === 0){
-          //   res.send("error")
-          // }
           let recipeName = recipes.filter(e => e.name.toLowerCase().includes(name.toLowerCase()))
           recipeName.length?
           res.status(200).send(recipeName):
