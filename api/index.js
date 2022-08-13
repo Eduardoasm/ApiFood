@@ -29,4 +29,4 @@ conn
       console.log("%s listening at 3001"); // eslint-disable-line no-console
     });
   })
-  // .then(() => dietTypesDb.map((e) => Diets.create({ name: e })));
+  .then(() => dietTypesDb.map((e) => Diets.create({ name: e })));
