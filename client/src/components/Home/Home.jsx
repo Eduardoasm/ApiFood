@@ -155,7 +155,7 @@ export default function Home() {
             <option value="ketogenic">ketogenic</option>
             <option value="lacto ovo vegetarian">lacto ovo vegetarian</option>
             <option value="vegan">vegan</option>
-            <option value="pescatarian">pescetarian</option>
+            <option value="pescatarian">pescatarian</option>
             <option value="paleolithic">paleolithic</option>
             <option value="primal">primal</option>
             <option value="whole 30">whole 30</option>
