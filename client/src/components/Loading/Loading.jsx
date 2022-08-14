@@ -5,7 +5,7 @@ import "./loading.css"
 export default function Loading(){
     return(
         <div className="loading">
-            <img src={loading} alt= "loading" margin-top="600px" width="500px" height="500px"/>
+            <img className="gifLoad" src={loading} alt= "loading"/>
         </div>
 
     )
