@@ -26,7 +26,7 @@ const dietTypesDb = [
   'ketogenic', 
   'lacto ovo vegetarian', 
   'vegan', 
-  'pescetarian', 
+  'pescatarian', 
   'paleolithic', 
   'primal', 
   'whole 30', 
