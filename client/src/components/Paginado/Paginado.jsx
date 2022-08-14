@@ -1,12 +1,11 @@
 import React from "react";
 import "./paginado.css"
 
-export default function Paginado({paginado, allRecipes, recipePerPage, currentPage, totalPages}){
-    totalPages = Math.ceil(allRecipes/recipePerPage)
+export default function Paginado({paginado, allRecipes, recipePerPage, currentPage}){
 
     let page = []
 
-        for (let i = 1; i <= totalPages; i++) {
+        for (let i = 1; i <= Math.ceil(allRecipes/recipePerPage); i++) {
             page.push(i)
         }
 

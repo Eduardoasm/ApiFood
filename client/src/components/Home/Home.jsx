@@ -195,7 +195,6 @@ export default function Home() {
           Prev
         </button>
         <Paginado
-          totalPages = {totalPages}
           allRecipes={allRecipes.length}
           recipePerPage={recipePerPage}
           paginado={paginado}
