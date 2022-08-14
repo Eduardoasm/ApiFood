@@ -39,7 +39,7 @@ export default function Home() {
     indexOfLastRecipe
   );
   const [filtrados, setFiltrados] = useState();
-  const totalPages = Math.ceil(allRecipes/recipePerPage)
+  const totalPages = Math.ceil(allRecipes.length/recipePerPage)
  
 
   const paginado = (pageNumber) => {
