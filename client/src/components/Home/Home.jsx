@@ -39,6 +39,7 @@ export default function Home() {
     indexOfLastRecipe
   );
   const [filtrados, setFiltrados] = useState();
+  const totalPages = Math.ceil(allRecipes/recipePerPage)
  
 
   const paginado = (pageNumber) => {
@@ -46,11 +47,7 @@ export default function Home() {
   };
 
   function nextPage() {
-    if (currentPage + 1) {
-      return setCurrentPage(currentPage + 1);
-    } else{
-      return currentPage
-    }
+    setCurrentPage(currentPage + 1)
   }
 
   function prevPage() {
@@ -111,8 +108,8 @@ export default function Home() {
         <button className="buttonRefresh" onClick={handleSubmit}>
           Refresh
         </button>
-
         <div className="inputSearch">
+          <form>
           <input
             className="inputBar"
             type="text"
@@ -127,6 +124,7 @@ export default function Home() {
           >
             Search
           </button>
+          </form>
         </div>
         <Link
           to="/createRecipe"
@@ -197,12 +195,13 @@ export default function Home() {
           Prev
         </button>
         <Paginado
+          totalPages = {totalPages}
           allRecipes={allRecipes.length}
           recipePerPage={recipePerPage}
           paginado={paginado}
           currentPage={currentPage}
         />
-        <button className="button2" onClick={nextPage}>
+        <button className="button2" disabled={currentPage >= totalPages} onClick={nextPage}>
           Next
         </button>
       </div>
