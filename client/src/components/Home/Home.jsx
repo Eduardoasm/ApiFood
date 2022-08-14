@@ -47,6 +47,7 @@ export default function Home() {
   };
 
   function nextPage() {
+    if(currentPage >= totalPages) return currentPage
     setCurrentPage(currentPage + 1)
   }
 
@@ -200,7 +201,7 @@ export default function Home() {
           paginado={paginado}
           currentPage={currentPage}
         />
-        <button className="button2" disabled={currentPage >= totalPages} onClick={nextPage}>
+        <button className="button2" onClick={nextPage}>
           Next
         </button>
       </div>
