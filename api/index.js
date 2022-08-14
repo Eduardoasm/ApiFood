@@ -19,7 +19,20 @@
 //     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 const server = require("./src/app.js");
 const { conn, Diets } = require("./src/db.js");
-const dietTypesDb = require("../api/src/controllers/diets");
+// const dietTypesDb = require("../api/src/controllers/diets");
+
+const dietTypesDb = [
+  'gluten free',
+  'ketogenic', 
+  'lacto ovo vegetarian', 
+  'vegan', 
+  'pescetarian', 
+  'paleolithic', 
+  'primal', 
+  'whole 30', 
+  'dairy free'
+];
+  
 
 // Syncing all the models at once.
 conn
