@@ -160,6 +160,7 @@ export default function Home() {
             <option value="primal">primal</option>
             <option value="whole 30">whole 30</option>
             <option value="dairy free">dairy free</option>
+            <option value="fodmap friendly">fodmap friendly</option>
           </select>
         </div>
       </div>

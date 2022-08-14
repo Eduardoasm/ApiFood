@@ -30,7 +30,8 @@ const dietTypesDb = [
   'paleolithic', 
   'primal', 
   'whole 30', 
-  'dairy free'
+  'dairy free',
+  'fodmap friendly'
 ];
   
 
