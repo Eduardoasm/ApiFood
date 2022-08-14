@@ -110,7 +110,7 @@ export default function Home() {
           Refresh
         </button>
         <div className="inputSearch">
-          <form>
+      
           <input
             className="inputBar"
             type="text"
@@ -125,7 +125,7 @@ export default function Home() {
           >
             Search
           </button>
-          </form>
+     
         </div>
         <Link
           to="/createRecipe"
