@@ -60,9 +60,7 @@ export default function Home() {
   }, [dispatch]);
 
   function handleSubmit(e) {
-    e.preventDefault();
     dispatch(getAllRecipes());
-    
   }
 
   const handleOrder = (e) => {
