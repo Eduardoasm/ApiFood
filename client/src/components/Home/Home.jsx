@@ -100,9 +100,11 @@ export default function Home() {
 
 
 
-  return currentRecipes.length < 1 ? (
- <Loading />
-) : (
+
+//   currentRecipes.length < 1 ? (
+//  <Loading />
+// ) :
+return (
     <div className="contenedorHome">
       <div className="contenedorNav">
       <div className="contenedorSearch">
