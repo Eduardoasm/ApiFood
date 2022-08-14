@@ -167,10 +167,10 @@ export default function Home() {
       </div>
       <div className="containerSlider">
           <ul>
-            <li> <img src={slider7} alt="comida" height="450px" width="600px" /> </li>
-            <li> <img src={slider6} alt="comida" height="450px" width="600px" /> </li>
-            <li> <img src={slider3} alt="comida" height="450px" width="600px" /> </li>
-            <li> <img src={slider4} alt="comida" height="450px" width="600px" /> </li>
+            <li> <img src={slider7} alt="comida" height="450px" width="50%" /> </li>
+            <li> <img src={slider6} alt="comida" height="450px" width="50%" /> </li>
+            <li> <img src={slider3} alt="comida" height="450px" width="50%" /> </li>
+            <li> <img src={slider4} alt="comida" height="450px" width="50%" /> </li>
             </ul>
       </div>
       
