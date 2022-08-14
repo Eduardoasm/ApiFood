@@ -46,10 +46,11 @@ export default function Home() {
   };
 
   function nextPage() {
-    if (currentPage > 11) {
-      return setCurrentPage(12);
+    if (currentPage + 1) {
+      return setCurrentPage(currentPage + 1);
+    } else{
+      return currentPage
     }
-    setCurrentPage(currentPage + 1);
   }
 
   function prevPage() {
