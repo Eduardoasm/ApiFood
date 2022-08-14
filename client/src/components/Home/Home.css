@@ -43,6 +43,7 @@
     /* background: blue; */
     height: 60px;
     width: 900px;
+    flex-direction: row;
 }
 
 .inputBar{

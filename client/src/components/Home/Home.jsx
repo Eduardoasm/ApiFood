@@ -109,8 +109,8 @@ export default function Home() {
         <button className="buttonRefresh" onClick={handleSubmit}>
           Refresh
         </button>
+        <form>
         <div className="inputSearch">
-      
           <input
             className="inputBar"
             type="text"
@@ -125,8 +125,8 @@ export default function Home() {
           >
             Search
           </button>
-     
         </div>
+        </form>
         <Link
           to="/createRecipe"
           style={{ textDecoration: "none", color: "black" }}
