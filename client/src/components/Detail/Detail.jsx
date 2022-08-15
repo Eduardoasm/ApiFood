@@ -17,7 +17,7 @@ export default function Detail(props){
 
   const remove = ()=>{
     dispatch(deleteRecipe(id))
-    alert(`la receta ${recipe.name} se ha eliminado correctamente!`)
+    alert(`${recipe.name} recipe has been successfully deleted`)
     props.history.push("/home")
   }
 
